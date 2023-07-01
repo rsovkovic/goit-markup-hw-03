@@ -1,0 +1,184 @@
+:root{
+--first-text-color: #2E2F42;
+--logo-text-color: #4D5AE5;
+--span-logo-color: #2E2F42;
+--primary-white-color: #FFFFFF;
+--primary-accent-color: #2E2F42;
+--second-accent-color: #404BBF;
+--primary-iris-color: #4D5AE5;
+}
+
+.body {
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    background-color:var(--primary-white-color);
+    color: var(--first-text-color);
+    line-height: 1.5;
+    color: #434455;
+    }
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+/*----------------------------Header---------------------*/
+.navigation-list {
+    color: var(--first-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+}
+
+.navigation-list:hover,
+.navigation-list:focus {
+    color: var(--second-accent-color);
+}
+
+.link-address {
+    color: var(--slate, #434455);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal;
+}
+
+.link-address:hover,
+.link-address:focus {
+    color: var(--second-accent-color);
+
+}
+
+.address {
+    font-style: normal;
+}
+
+.logo {
+    color: var(--logo-text-color);
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo-text {
+    color: var(--span-logo-color);
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+/*---------------------------------Section-one-mainpage--------------*/
+.title-mainpage{
+    color: var(--primary-white-color);
+        text-align: center;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        background: var(--primary-accent-color);
+}
+.mainpage-button{
+
+    background: var(--primary-iris-color);
+    
+    color: var(--primary-white-color);
+        font-size: 16px;
+        font-family: Roboto,sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+}
+.mainpage-button:hover,.mainpage-button:focus{
+    
+        background: var(--second-accent-color);
+       
+        color: var(--primary-white-color);
+}
+
+/*------------------------------All-text-page--------------*/
+.title-two{
+    color: var(--first-text-color);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+}
+.text-title {
+    color: var(--first-text-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.text-page {
+    color: var(--slate, #434455);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/*-----------All-section-mainpage--------*/
+.section-one{
+   background-color: #2e2f42;
+}
+.section-four-item{
+background-color: var(--primary-white-color);
+}
+.section-four{
+    background-color: #F4F4FD;
+}
+/*----------------------------Section-Portfolio-page-------------*/
+
+.portfolio-button{
+    color: var(--primary-iris-color);
+        text-align: center;
+        font-size: 16px;
+        font-family: Roboto,sans-serif;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+
+            
+            background: var(--cloud, #F4F4FD);
+            list-style: none;
+            cursor: pointer;
+}
+.portfolio-button:hover,.portfolio-button:focus{
+color: var(--primary-white-color);
+    text-align: center;
+        background: var(--second-accent-color);
+}
+
+/*--------------------------------------Footer--------------*/
+.text-footer {
+    color: var(--cloud, #F4F4FD);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background: var(--primary-accent-color);
+}
+    .footer {
+        background-color:var(--primary-accent-color);
+    }
+        .footer .logo-text{
+            color: #f4f4fd
+        }
+        
+   
