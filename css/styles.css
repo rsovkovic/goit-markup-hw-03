@@ -8,6 +8,16 @@
 --primary-iris-color: #4D5AE5;
 }
 
+p, h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
 .body {
     font-family: Roboto,sans-serif;
     font-size: 16px;
@@ -24,9 +34,54 @@
 .link {
     text-decoration: none;
 }
+.container {
+    width: 100%;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/**----------------------------Header---------------------*/
+.header {
+    padding: 24px 0;
+}
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--cornflower, #E7E9FC);
+    /*padding: 24px 0;*/
 
+}
 
-/*----------------------------Header---------------------*/
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+}
 .navigation-list {
     color: var(--first-text-color);
     font-size: 16px;
@@ -35,7 +90,6 @@
     letter-spacing: 0.02em;
 
 }
-
 .navigation-list:hover,
 .navigation-list:focus {
     color: var(--second-accent-color);
@@ -60,6 +114,8 @@
 }
 
 .logo {
+    display: flex;
+   /* margin-right: 76px;*/
     color: var(--logo-text-color);
     font-size: 18px;
     font-family: Raleway, sans-serif;
@@ -81,44 +137,89 @@
     text-decoration: none;
 
 }
-/*---------------------------------Section-one-mainpage--------------*/
+/**---------------------------------Section-one-mainpage--------------*/
+.section-one {
+background: var(--primary-accent-color);
+}
+
 .title-mainpage{
     color: var(--primary-white-color);
-        text-align: center;
-        font-size: 56px;
-        font-weight: 700;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        background: var(--primary-accent-color);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    background: var(--primary-accent-color);
+    margin: 0 auto;
+    max-width: 496px;
+    margin-bottom: 48px;
+    padding-top: 188px;  
 }
 .mainpage-button{
 
     background: var(--primary-iris-color);
-    
+
     color: var(--primary-white-color);
-        font-size: 16px;
-        font-family: Roboto,sans-serif;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        cursor: pointer;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
+    margin-bottom: 188px;
+   
 }
 .mainpage-button:hover,.mainpage-button:focus{
     
-        background: var(--second-accent-color);
-       
+    background: var(--second-accent-color);
         color: var(--primary-white-color);
 }
 
-/*------------------------------All-text-page--------------*/
+/**------------------Section-two-Flexbox--------*/
+.section-two-list { 
+    display: flex;
+    gap: 24px;
+}
+.section-two {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.section-two-item {
+    width: calc{(100% - 96) / 4}
+}
+ /**---------------------------Section-three-Flexbox----------*/
+.section-three-list{
+    display: flex;
+    gap: 24px;
+}
+.title-two {
+    margin-bottom: 72px;
+}
+.section-three-item {
+    width: calc{(100% - 72) / 3};
+    padding-bottom: 120px;
+}
+/**---------------Section-four-Flexbox----------------------*/
+.section-four-list {
+    display: flex;
+    gap: 24px;
+}
+/.section-four-item {
+    width: calc{(100% - 96) / 4};
+}
+
+/**------------------------------All-text-page--------------*/
 .title-two{
     color: var(--first-text-color);
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 .text-title {
     color: var(--first-text-color);
@@ -126,6 +227,7 @@
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .text-page {
@@ -134,39 +236,38 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-/*-----------All-section-mainpage--------*/
+/**-----------All-section-mainpage--------*/
 .section-one{
    background-color: #2e2f42;
 }
 .section-four-item{
-background-color: var(--primary-white-color);
+    background-color: var(--primary-white-color);
 }
 .section-four{
     background-color: #F4F4FD;
 }
-/*----------------------------Section-Portfolio-page-------------*/
+/**----------------------------Section-Portfolio-page-------------*/
 
 .portfolio-button{
     color: var(--primary-iris-color);
-        text-align: center;
+    text-align: center;
         font-size: 16px;
-        font-family: Roboto,sans-serif;
+        font-family: Roboto, sans-serif;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
 
-            
-            background: var(--cloud, #F4F4FD);
+        background: var(--cloud, #F4F4FD);
             list-style: none;
             cursor: pointer;
 }
 .portfolio-button:hover,.portfolio-button:focus{
-color: var(--primary-white-color);
+    color: var(--primary-white-color);
     text-align: center;
-        background: var(--second-accent-color);
+    background: var(--second-accent-color);
 }
 
-/*--------------------------------------Footer--------------*/
+/**--------------------------------------Footer--------------*/
 .text-footer {
     color: var(--cloud, #F4F4FD);
     font-size: 16px;
@@ -174,11 +275,12 @@ color: var(--primary-white-color);
     letter-spacing: 0.02em;
     background: var(--primary-accent-color);
 }
-    .footer {
-        background-color:var(--primary-accent-color);
+.footer {
+    background-color: var(--primary-accent-color);
     }
-        .footer .logo-text{
-            color: #f4f4fd
-        }
+.footer .logo-text {
+    color: #f4f4fd
+}
+
         
    
