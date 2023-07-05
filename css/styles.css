@@ -59,7 +59,7 @@ img {
 }
 /**----------------------------Header---------------------*/
 .header {
-    padding: 24px 0;
+    /*padding: 24px 0;*/
     border-bottom: 1px solid #e7e9fc;
 }
 .container-header {
@@ -73,13 +73,13 @@ img {
     display: flex;
     align-items: center;
     /*gap: 76px;*/
-    padding: 24px 0;
+    /*padding: 24px 0;*/
 }
 
 .nav-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
+    /*padding: 24px 0;*/
 }
 
 .address-list {
@@ -243,14 +243,16 @@ background: var(--primary-accent-color);
     background-color: #F4F4FD;
 }
 
-.section-four .text-page {
-    text-align: center;
-    padding-bottom: 32px;
-}
-
 .section-four .text-title {
     text-align: center;
     margin-bottom: 8px;
+}
+.section-four .text-page {
+    text-align: center;
+   /* padding-bottom: 32px;*/
+}
+.employee-card {
+    padding32px 16px 32px;
 }
 
 /**------------------------------All-text-page--------------*/
