@@ -66,13 +66,14 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--cornflower, #E7E9FC);
+    
 }
 
 .navigation {
     display: flex;
     align-items: center;
     /*gap: 76px;*/
+    padding: 24px 0;
 }
 
 .nav-list {
