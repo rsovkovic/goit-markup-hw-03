@@ -389,11 +389,16 @@ margin-bottom: 48px;
 .footer {
     background-color: var(--primary-accent-color);
     }
-.footer .logo-text {
-    color: #f4f4fd;
-    margin-bottom: 16px;
+.footer .logo {
     display: inline-block;
+    margin-bottom: 16px;
+    }
+.footer .logo-text {
+    
+    color: #f4f4fd;
+    
 }
+
 
         
    
