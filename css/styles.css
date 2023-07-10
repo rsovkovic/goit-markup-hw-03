@@ -224,7 +224,6 @@ background: var(--primary-accent-color);
     gap: 24px;
 }
 .section-four-item {
-    margin-bottom: 120px;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-white-color);
     background: var(--primary-white-color);
